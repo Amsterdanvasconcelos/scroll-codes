@@ -6,22 +6,6 @@
     color: rgb(16, 16, 16);
     font-family: Arial, Helvetica, sans-serif;
 }
-/* https://desenvolvimentoparaweb.com/css/navegacao-ancora-smooth-scroll-css-puro/ */
-
-/* Determina um scroll suave. */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Determina o espaçamento entre o target e o topo da viewport. */
-section:target {
-    scroll-margin-top: 4rem;
-}
-
-/* 
-   Apague as duas propriedades scroll acima para testar o scroll
-   fornecido pelo JavaScript.
-*/
 
 header {
     position: fixed;
@@ -61,6 +45,7 @@ h1 {
 }
 
 #one {
+    /* Padding para compensar a parte que fica atrás do header, que está com position fixed*/
     padding-top: 100px;
     background-color: lightgreen;
 }
